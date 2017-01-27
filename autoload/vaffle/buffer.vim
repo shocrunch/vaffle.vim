@@ -27,6 +27,7 @@ function! s:set_up_default_mappings() abort
   nmap <buffer> <silent> <C-[>      <Plug>(vaffle-quit)
   nmap <buffer> <silent> <Esc>      <Plug>(vaffle-quit)
   nmap <buffer> <silent> R          <Plug>(vaffle-refresh)
+  nmap <buffer> <silent> c          <Plug>(vaffle-cd)
 endfunction
 
 

@@ -57,6 +57,7 @@ nnoremap <silent> <Plug>(vaffle-new-file)        :<C-u>call vaffle#new_file()<CR
 nnoremap <silent> <Plug>(vaffle-open-parent)     :<C-u>call vaffle#open_parent()<CR>
 nnoremap <silent> <Plug>(vaffle-quit)            :<C-u>call vaffle#quit()<CR>
 nnoremap <silent> <Plug>(vaffle-refresh)         :<C-u>call vaffle#refresh()<CR>
+nnoremap <silent> <Plug>(vaffle-cd)              :<C-u>call vaffle#cd()<CR>
 
 
 let &cpoptions = s:save_cpo

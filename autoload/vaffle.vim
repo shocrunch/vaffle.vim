@@ -351,4 +351,14 @@ function! vaffle#toggle_hidden() abort
 endfunction
 
 
+function! vaffle#cd() abort
+  call s:keep_buffer_singularity()
+
+  let env = vaffle#buffer#get_env()
+  let current_dir = fnamemodify(env.dir, ':p')
+
+  execute printf('lcd %s', fnameescape(current_dir))
+endfunction
+
+
 let &cpoptions = s:save_cpo
